@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	int q,list[10],a; 
+	float w,s,x,z;
+	
+	cout<<"Input ten digits: \n";
+
+	s=0;
+
+	for(a=0;a<10;a++)
+	{
+		cin>>list[a];
+		x = x + list[a];
+	}
+
+	z = x/10;
+
+	for(a=1;a<10;a++)
+	{
+		if(list[q]<list[a])
+		q = a;
+	}
+	
+	w = list[q];
+
+	for(a=1;a<10;a++)
+	{
+		if(list[q]>list[a])
+		q = a;
+	}
+
+	s = list[q];
+
+	cout<<"\nSmallest digit: "<< s;
+	cout<<"\nLargest digit: "<< w;
+	cout<<"\nSum of the ten: "<< x;
+	cout<<"\nAverage of the ten: "<< z;
+
+	return 0;
+}
