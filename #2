@@ -1,0 +1,49 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	int a[7], b[7], c[7], q, w;
+	
+	cout<<"Input the temperatures for a week of provinces A, B and C\n";
+	
+	for(w = 1; w <= 7; w++)
+	{
+		cout << "Province A, Day " << w << ": ";
+		cin >> a[w];
+	}
+	
+	for(q = 1; q <= 7; q++)
+	{
+		cout << "Province B, Day " << q << ": ";
+		cin >> b[q];
+	}
+	
+	for(q = 1; q <= 7; q++)
+	{
+		cout << "Province C, Day " << q << ": ";
+		cin >> c[q];
+	}
+	
+	cout << "\n\n\nDisplaying value: \n";
+	
+	for(w = 1; w <= 7; w++)
+	{
+		cout << "\nProvince A, Day " << w << " = " << a[w];
+	}
+	
+	for(q = 1; q <= 7; q++)
+	{
+		cout << "\nProvince B, Day " << q  << " = " << b[q];
+	}
+	
+	for(q = 1; q <= 7; q++)
+	{
+		cout << "\nProvince C, Day "<< q  << " = " << c[q];
+	}
+	
+	
+	return 0;
+}
