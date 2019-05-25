@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	int q,a,z,s;
+	char arr[200];
+	
+	cout << "Input anything\n";
+	cin >> arr;
+	
+	for(a = 0; arr[a] != '\0'; a++)
+		q++;
+		
+	for(a = 0; a < q; a++)
+	{		
+		for(z = a + 1; z < q; z++)
+		{
+			if(arr[a] > arr[z])
+			{
+				s = arr[a];
+				arr[a] = arr[z];
+				arr[z] = s;
+			}
+		}
+	}
+	cout << "\n\nOutput: \n";
+	
+	for(a = 0; a < q; a++)
+		cout << arr[a] << " ";
+		
+		
+	cout << "\n\nSize of the array: " << q;
+
+	return 0;
+}
